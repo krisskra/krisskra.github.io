@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- komentarz widoczy z dev tools, niewidoczny na stronie, skrót ctrl + / -->
+<a href="https://google.com" target="_blank">Google</a>
+<!-- link relatywny: -->
+<a href="/kontakt.html">link 2</a>
+<!-- kotwice (tylko do id) -->
+<a href="#contact"></a>
+<a href="tel:+48577980945"></a>
+<a href="mailto:krzysztof.iskra@onet.pl">mailto:krzysztof.iskra@onet.pl</a>
+<!-- target opisuje sposób otwarcia linku nowa karta/okno itd.-->
+
+<div class="cennik">
+    <table>
+        <thead>
+            <tr>
+                <th>Produkt</th>
+                <th>Cena</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Apple</td>
+                <td>2000zł</td>
+            </tr>
+            <tr>
+                <td>Samsung</td>
+                <td>2100zł</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- action - plik najczęściej php, który robi coś z danymi
+         wpisanymi przez użytkownika -->
+    <!-- get - widać w linku
+    post - nie widać w linku -->
+    <form action="https://formspree.io/krzysztof.iskra@onet.pl" method="POST">
+        <label for="name">Imię</label>
+        <input type="text" name="name" id="name" placeholder="Wpisz imię">
+        <label for="email">Email</label>
+        <input type="email " name="email" required>
+        <label for="nubmer">Numer</label>
+        <input type="number" name="number" id="number" disabled>
+        <br>
+        <label>
+            fdsd
+            <input type="checkbox" name="select" id="select">
+        </label>
+        <p>Wybierz płeć</p>
+        <label>Mężczyzna<input type="radio" name="sex" id="sex"></label>
+        <label>Kobieta<input type="radio" name="sex" id="sex"></label>
+        <!-- do wsprowadzania wielu linijek tekstu -->
+        <textarea maxlength="5" name="msg" id="msg"></textarea>
+        <br>
+        <label for="car">Wybierz samochód: <br></label>
+        <select name="car" id="car">
+        <option value="volvo">Volvo</option>
+        <option value="vw">Volkswagen</option>
+        <option value="bmw">BMW</option></select>
+        <input type="submit" value="Wyślij">
+    </form>
+</div>
+</body>
+</html>
