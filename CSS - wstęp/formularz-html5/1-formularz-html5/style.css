@@ -1,0 +1,28 @@
+/* Kody kolorów:
+•
+tło: #213b50
+•
+pole nieaktywne: #2b4a64
+•
+pole aktywne: #4e708c
+•
+ramka aktywnego pola i kolor tekstu: ffffff */
+
+form{
+    width: 50%;
+    background-color: #213b50;
+    padding: 15px;
+    color: white;
+}
+form>input,
+textarea,
+option
+{
+    background-color: #2b4a64;
+}
+form>input:focus{
+    background-color: #4e708c;
+}
+label{
+    display: block;
+}

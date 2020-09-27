@@ -1,0 +1,23 @@
+.jednostki-miary{
+    font-size: 20px;
+    width: 400px;
+}
+
+.jednostki-miary div{
+    background-color: orange;
+}
+
+#piksele{
+    width: 400px;
+}
+
+#em {
+    width: 50em;
+}
+
+#procenty{
+    width: 50%;
+}
+#vw{
+    width: 20vh;
+}
