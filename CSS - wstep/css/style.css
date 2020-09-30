@@ -1,0 +1,92 @@
+/* selektor uniwersalny */
+* {
+    color: red;
+}
+
+/* selektor znacznika */
+
+h2
+{  
+    color: green;
+}
+
+/* selektor klasy */
+
+.selectors {
+    background-color: yellow;
+}
+
+#main-title{
+    font-size: 50px;
+}
+
+/* selektor łączony */
+div.child{
+
+}
+
+/* selektor rodzeństwa */
+.child ~ .sibling {
+    background-color: fuchsia;
+}
+
+/* selektor bezpośredniego rodzeństwa */
+.child + .sibling {
+    background-color: hotpink;
+}
+
+/* pseudo elementy */
+.child p::before {
+    content: 'początek';
+}
+
+.child p::after {
+    content: 'koniec';
+}
+
+/* pseudo klasy */  
+
+.hover:hover{
+    background-color: blue;
+}
+
+/* focus */
+input:focus {
+    border: 9px, solid red;
+}
+/* pierwsze - ostatnie dziecko */
+ul :first-child a {
+    color: blue;
+}
+/* pierwszy ostatni element WAŻNE!!!*/
+
+ul :last-of-type a {
+    color: coral;
+}
+
+/* elementy które posiadają dany atrybut */
+[title] {
+    border: 5px, green solid;
+}
+
+/* selektor atrybutu o określonej wartośći */
+[title="pierwszy input"] {
+    border: solid 10px greenyellow;
+}
+
+/* selektor atrybutu posiadający wartość */
+[title~="drugi"]{
+    border: 10px dotted red
+}
+
+/* selektor atrybutu posiadający grupę znaków */
+input[title*='in']{
+    border: sienna solid 6px;
+}
+/* selektor atrybutów zaczynający się/kończący się ciągiem znaków */
+input[title^='pie']{
+    border: 6px solid fuchsia;
+}
+input[title$='put']{
+    border: 6px solid blue;
+}
