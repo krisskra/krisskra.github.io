@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form action="form" method="POST">
+       <label for="name">Imię</label> <br>
+       <input type="text" name="name" id="name">
+       <br>
+       <label for="surname">Nazwisko</label> <br>
+       <input type="text" name="surname" id="surname">
+       <br>
+       <label for="mail">E-mail</label> <br>
+       <input type="email" name="mail" id="mail">
+       <br>
+       <label for="tel">Telefon</label> <br>
+       <input type="number" name="tel" id="tel" min="0">
+       <br>
+       <p>Miasto</p>
+       <select name="city" id="city">
+           <option value="cracow">Kraków</option>
+           <option value="warsaw">Warszawa</option>
+           <option value="gdansk">Gdańsk</option>
+       </select>
+       <p>Płeć</p>
+       <label for="gender">Kobieta</label>
+       <input type="radio" name="gender" id="gender">
+       <label for="gender">Mężczyzna</label>
+       <input type="radio" name="gender" id="gender">
+       <br><br>
+       <label for="agree">Wyrażam zgodę na przetwarzanie moich danych osobowych</label>
+       <input type="checkbox" name="agree" id="agree" required>
+       <br>
+       <label for="message">Wiadomość</label><br>
+       <textarea name="message" id="message" maxlength="1000"></textarea>
+       <br>
+       <input type="submit" value="Wyślij">
+   </form> 
+</body>
+</html>
