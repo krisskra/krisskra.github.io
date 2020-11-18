@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+}
+body{
+    position: relative;
+}
+.header{
+    background-image: url(obrazy/man-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px -150px;
+    height: 100vh;
+    display: flex;
+}
+.header_text{
+    color: white;
+    margin: 0 40px;
+    line-height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media(max-width: 1170px){
+    .header{
+        background-image: url(obrazy/man-2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+        height: 70vh;
+    }
+    .header_text{
+        color: white;
+        font-size: 100%;
+        margin: 100px 40px;
+        text-align: right;
+        position: absolute;
+        top: 0;
+        right: 0;
+        line-height: 50px;
+    }
+}
+
+@media(max-width: 992px){
+    .header{
+        background-image: url(obrazy/man-1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0px;
+        height: 50vh;
+    }
+    .header_text{
+        color:black;
+        font-size: 100%;
+        margin: auto;
+        position: absolute;
+        line-height: 50px;
+        text-align: center;
+        top: 105%;
+        left: 0;
+    }
+}
