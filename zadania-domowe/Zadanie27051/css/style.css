@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/* Kolory:
+- buttony, linki, ikony - #a5e200, rgb(165,226,0)
+- buttony, linki, ikony (hover) - #88ba00, rgb(136,186,0)
+- tło górnego paska, sekcji "counter-services" i "team" - #f0f4dc
+
+Czcionki:
+- nagłówki: "Archivo Black"
+- pozostały tekst: "Raleway"
+
+Nagłówek h1:
+- wielkość czcionki: 38px
+- odległość między literami 4px (letter-spacing)
+- tekst dużymi literami (uppercase)
+
+Button pod nagłówkiem h1 ("View more"):
+- wielkość czcionki: 22px
+- wyżej o 24px
+
+Linie pod nagłówkami:
+- sekcja About, Services, Counters-progress, Team oraz Counters-numbers - szerokość 150px
+- sekcja Counters-services (linie pod tytułami) - szerokość 25px, przezroczystość 50%
+
+Ikony w sekcji About:
+- wysokość i szerokość - 96px
+- ikony wyśrodkowane wzgłędem kółek
+
+Sekcja Portfolio:
+- wydłużenie czasu pojawiania się ciemnego tła (hover na obrazkach), czas trwania 1s
+
+Sekcja Counters-services:
+- dodanie animacji ikon po najechaniu na nie kursorem - powinny obracać się o -45deg, animacja płynna trwająca 0.5s
+
+Sekcja Footer:
+- górny padding sekcji 80px
+- większe ikony social media 25px (font-size)
+
+Uwagi:
+- zmian dokonuj wyłącznie w plikach .scss (nie wprowadzaj zmian w plikach .html ani .css)
+- czcionki importujemy w pliku .scss (z Google Fonts) */
+/*# sourceMappingURL=style.css.map */
